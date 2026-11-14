@@ -1,0 +1,25 @@
+[project]
+name = "minilang-analizador"
+version = "0.1.0"
+description = "Analizador de errores léxicos, sintácticos y semánticos para el lenguaje MiniLang"
+readme = "README.md"
+authors = [
+    { name = "K31NER", email = "zunigaromerokeiner@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "rich>=15.0.0",
+    "textual>=8.2.8",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "textual-dev>=1.8.0",
+]

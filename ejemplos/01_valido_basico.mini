@@ -1,0 +1,6 @@
+int edad = 18;
+float precio = 2.5;
+bool activo = true;
+while (edad < 21) {
+    edad = edad + 1;
+}
